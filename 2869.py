@@ -1,5 +1,5 @@
-total = 0
-cnt = 0
+import math
 
-a, b, c = map(int, input().split())
-
+a, b, v = map(int, input().split())
+days = math.ceil((v - a) / (a - b)) + 1
+print(days)
